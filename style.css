@@ -1,7 +1,7 @@
 .hero {
 height: 100%;
 width: 100%;
-background-image: url(jeremy.jpg);
+background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(jeremy.jpg);
 background-position: center;
 background-size: cover;
 position: absolute;
@@ -25,18 +25,22 @@ position: absolute;
    background: linear-gradient(to right, #525baf,#a8298d);
    border: round;
    border-radius: 100px;
+   top: 10px;
 }
 .input-group {
 top: 80px;
-left: 20px;
+left: 10px;
+
 position: absolute;
 width: 280px;
 transition: .5s;
 
 }
 .field {
+  
     width: 100%;
     padding: 10px 0;
+    bottom: 100px;
     outline: none;
     background: transparent;
 margin-bottom: 0px;
