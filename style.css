@@ -1,0 +1,12 @@
+.hero {
+height: 100%;
+width: 100%;
+background-image: url(jeremy.jpg);
+background-position: center;
+background-size: cover;
+position: absolute;
+}
+
+.form-box {
+    
+}
