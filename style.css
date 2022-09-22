@@ -8,5 +8,36 @@ position: absolute;
 }
 
 .form-box {
-    
+    width: 380px;
+    height: 380px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+}
+.toggle-btn {
+   padding: 10px 30px;
+   cursor: pointer; 
+   background: transparent;
+   border: 0;
+   outline: none;
+   position: relative;
+   background: linear-gradient(to right, #525baf,#a8298d);
+   border: round;
+   border-radius: 100px;
+}
+.input-group {
+top: 80px;
+left: 20px;
+position: absolute;
+width: 280px;
+transition: .5s;
+
+}
+.field {
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    background: transparent;
+margin-bottom: 0px;
 }
