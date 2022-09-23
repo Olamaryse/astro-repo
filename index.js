@@ -8,13 +8,16 @@ birthButton.addEventListener("click", ()=>{
 
 async function sendApiRequest(){
     let API_KEY = "l8SEJRkChs8lXnCnC7l2eDrrsZcw1LmytNZh16d0"
-    let response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY} '&date=' + date
-    `);
+    let response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`);
     console.log(response)
+    let data = await response.json();
+    console.log(data);
+    useApiData(data);
 }
 
 function useApiData(data) {
-
+document.querySelector("#content").innerHTML += data.explanation;
+document.querySelector("#content").innerHTML += `<img src="${data.url}`
 }
 
 const date = new Date();
