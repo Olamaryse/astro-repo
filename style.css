@@ -104,7 +104,6 @@ margin-bottom: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-shadow: 0.3rem .5rem rgba(0,0,0,0.5);
 }
 .days {
 width: 100%;
@@ -120,6 +119,16 @@ padding: 0.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.2s;
 }
+.days div:hover:not(.today) {
+    background-color: #262626;
+    border: 0.2rem solid #777;
+}
+ .prev-date {
+    opacity: 0.5;
+ }
+ .today {
+    background-color: #4b2ca1;
 
-
+ }
