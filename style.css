@@ -52,11 +52,18 @@ margin-bottom: 0px;
     font-size: 63%;
     width: 100%;
     height: 100%;
+    max-height: 100%;
     background-color: #12121f;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(graham.jpg);
+    background-position: center;
+background-size: cover;
     color: #eee;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.whole {
+    max-width: 100%;
 }
 .calendar {
     width: 45rem;
@@ -65,13 +72,13 @@ margin-bottom: 0px;
     box-shadow: 0 0.5rem 5rem rgba(0,0,0,0.4);
 }
 .month {
-    
-    height: 12rem;
+    width: 100%;
+    height: 8rem;
     background-color: #7d20d4;
     display: flex;
     justify-content: space-between;
+
     align-items: center;
-    padding: 0 2rem;
     text-align: center;
     text-shadow: 0 .3rem .5rem rgba(0,0,0,0.5);
 }
